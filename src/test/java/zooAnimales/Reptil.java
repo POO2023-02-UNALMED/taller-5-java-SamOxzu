@@ -1,5 +1,7 @@
 package zooAnimales;
 
+import gestion.Zona;
+
 public class Reptil extends Animal{
 	private static Reptil [] listado;
 	public static int iguanas;
@@ -21,5 +23,26 @@ public class Reptil extends Animal{
 	
 	public String movimiento() {
 		return "a";
+	}
+	
+	public Reptil() {
+		
+	}
+	
+	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.habitat = habitat;
+		this.genero = genero;
+		this.colorEscamas = colorEscamas;
+		this.largoCola = largoCola;
+	}
+	
+	public String getColorEscamas() {
+		return colorEscamas;
+	}
+	
+	public int getLargoCola() {
+		return largoCola;
 	}
 }

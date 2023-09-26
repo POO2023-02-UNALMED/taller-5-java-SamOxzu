@@ -25,11 +25,20 @@ public class Mamifero extends Animal{
 		
 	}
 	
-	public Mamifero(String nombre, int edad, String habitat, String genero, Zona zona) {
+	public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
 		this.nombre = nombre;
-		this.Edad = edad;
+		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.zona = zona;
+		this.pelaje = pelaje;
+		this.patas = patas;
+	}
+	
+	public boolean isPelaje() {
+		return pelaje;
+	}
+	
+	public int getPatas() {
+		return patas;
 	}
 }

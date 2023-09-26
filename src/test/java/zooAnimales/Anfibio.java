@@ -1,5 +1,7 @@
 package zooAnimales;
 
+import gestion.Zona;
+
 public class Anfibio extends Animal{
 	private Anfibio [] listado;
 	public static int ranas;
@@ -21,5 +23,26 @@ public class Anfibio extends Animal{
 	
 	public String movimiento() {
 		return "a";
+	}
+	
+	public Anfibio() {
+		
+	}
+	
+	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.habitat = habitat;
+		this.genero = genero;
+		this.colorPiel = colorPiel;
+		this.venenoso = venenoso;
+	}
+	
+	public String getColorPiel() {
+		return colorPiel;
+	}
+	
+	public boolean isVenenoso() {
+		return venenoso;
 	}
 }

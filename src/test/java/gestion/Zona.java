@@ -21,9 +21,16 @@ public class Zona {
 		
 	}
 	
-	public Zona(String nombre, Zoologico zoo, List<Animal> animales) {
+	public Zona(String nombre, Zoologico zoo) {
 		this.nombre = nombre;
 		this.zoo = zoo;
-		this.animales = animales;
+	}
+	
+	public Zoologico getZoo() {
+		return zoo;
+	}
+	
+	public String getNombre() {
+		return nombre;
 	}
 }
